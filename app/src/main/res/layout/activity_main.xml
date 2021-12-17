@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nose"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/white_circle" />
+
+        <TextView
+            android:id="@+id/blank"
+            android:layout_width="60dp"
+            android:layout_height="80dp" />
+
+
+        <ImageView
+            android:id="@+id/cross"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/white_cross" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="°"
+        android:textColor="@color/white"
+        android:textSize="100dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/smile"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_below="@+id/LL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:rotation="70"
+        android:text=")"
+        android:textColor="@color/white"
+        android:textSize="124sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/smile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Powered by Android"
+        android:textColor="#23CF23"
+        android:textSize="24sp" />
+
+</RelativeLayout>
